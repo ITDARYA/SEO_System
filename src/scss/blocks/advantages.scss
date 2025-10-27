@@ -1,0 +1,133 @@
+.advantages {
+    margin-bottom: 50px;
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0.16em;
+        color: #393939;
+        // @media (max-width: 1070px) {
+        //     font-variant: small-caps;
+        //     font-size: 16px;
+        // }
+    }
+    &__content-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 60px;
+        // @media (max-width: 1070px) {
+        //     margin-bottom: 30px;
+        // }
+        .advantages__heading {
+            max-width: 636px;
+            font-family: $second-family;
+            font-weight: 600;
+            font-size: 74px;
+            line-height: 100%;
+            color: #393939;
+            @media (max-width: 1400px) {
+                max-width: 473px;
+                font-size: 64px;
+            }
+            // @media (max-width: 1070px) {
+            //     max-width: 342px;
+            //     font-size: 40px;
+            // }
+
+            span {
+                color: #0c47a0;
+            }
+        }
+
+        .advantages__descr {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-width: 408px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            color: #393939;
+            // @media (max-width: 1070px) {
+            //     font-size: 16px;
+            // }
+        }
+    }
+    .advantages__content-bottom {
+        .advantages__list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(342px, 1fr));
+            gap: 29px;
+            @media (max-width: 1400px) {
+                gap: 26px;
+            }
+            @media (max-width: 1193px) {
+                gap: 18px;
+            }
+            .item {
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                border-radius: 30px;
+                padding: 41px 39px;
+                min-height: 637px;
+                background-image: url("../img/advantage-bg1.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                @media (max-width: 1400px) {
+                    padding: 30px 26px;
+                    min-height: 527px;
+                }
+
+                &:nth-child(2) {
+                    align-items: flex-start;
+                    background-image: url("../img/advantage-bg2.jpg");
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+                    .item__number {
+                        top: auto;
+                        bottom: 41px;
+                        @media (max-width: 1400px) {
+                            bottom: 30px;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    background-image: url("../img/advantage-bg3.jpg");
+                }
+
+                .item__number {
+                    position: absolute;
+                    z-index: 3;
+                    top: 41px;
+                    left: 39px;
+                    width: 76px;
+                    height: 76px;
+                    @media (max-width: 1400px) {
+                        top: 30px;
+                        left: 26px;
+                    }
+                }
+
+                .item__title {
+                    position: relative;
+                    z-index: 3;
+                    font-family: $second-family;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 101%;
+                    color: #fff;
+                    @media (max-width: 1400px) {
+                        font-size: 32px;
+                        line-height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

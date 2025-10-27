@@ -1,0 +1,17 @@
+/* Assets */
+@import "./assets/*.scss";
+
+/* Base */
+@import "./base/reset";
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/fontsAutoGen";
+@import "./base/base";
+@import "./base/common.scss";
+
+/* Blocks */
+@import "./blocks/*.scss";
+
+/* No styles code below. Only in modules */
+/* Не пишите CSS код ниже. Только в подключаемых файлах */

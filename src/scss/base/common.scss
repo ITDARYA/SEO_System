@@ -1,0 +1,22 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 64px;
+    background-color: lightgray;
+    @media (max-width: 1400px) {
+        padding: 0 44px;
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    width: fit-content;
+    height: 36px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+}

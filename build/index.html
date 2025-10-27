@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SEO-System</title>
+        <!-- <script src="./js/script.bundle.js" defer type="module"></script> -->
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+
+    <body>
+        <header class="header">
+    <div class="header__inner">
+        <div class="header__top">
+            <a class="header__logo" href="#">
+                <img src="./img/logo.svg" alt="логотип компании" />
+            </a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav-element" data-nav="1">
+                        <a class="nav__item-link" href="#hero">Главная</a>
+                    </li>
+                    <li class="nav__item nav-element" data-nav="2">
+                        <a class="nav__item-link" href="#services">Услуги</a>
+                    </li>
+                    <li class="nav__item nav-element" data-nav="3">
+                        <a class="nav__item-link" href="#projects">Проекты</a>
+                    </li>
+                    <li class="nav__item nav-element" data-nav="4">
+                        <a class="nav__item-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav__item nav-element" data-nav="5">
+                        <a class="nav__item-link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <a class="header__phone" href="tel:+74958592136">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M15.6005 14.5221C13.2055 17.0421 7.09652 10.9881 9.50052 8.45811C10.9685 6.91311 9.31052 5.14811 8.39252 3.84911C6.66952 1.41411 2.88852 4.77611 3.00252 6.91511C3.36552 13.6611 10.6625 21.6551 17.7285 20.9571C19.9385 20.7391 22.4785 16.7471 19.9435 15.2881C18.6755 14.5581 16.9345 13.1181 15.6005 14.5211"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                    <span>+7(495)859-21-36</span>
+                </a>
+                <button class="btn header__btn">
+                    <span>Оставить заявку</span>
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M13.4189 18.2637L13.3584 18.3252C13.2942 18.3641 13.2208 18.3864 13.1445 18.3867C13.0339 18.3871 12.9271 18.3436 12.8486 18.2656C12.7703 18.1877 12.726 18.0812 12.7256 17.9707C12.7254 17.8879 12.7499 17.8073 12.7949 17.7393L12.8467 17.6758L17.6406 12.8428L18.0625 12.416L4.70996 12.416C4.59945 12.416 4.49318 12.3721 4.41504 12.2939C4.33706 12.2159 4.29306 12.1103 4.29297 12C4.29297 11.8895 4.3369 11.7832 4.41504 11.7051C4.49318 11.6269 4.59946 11.583 4.70996 11.583L18.0625 11.583L17.6406 11.1572L12.8467 6.32324L12.834 6.30957L12.8184 6.29883C12.7704 6.2634 12.7301 6.21812 12.7012 6.16602C12.6722 6.11383 12.6551 6.05557 12.6504 5.99609C12.6457 5.93659 12.6543 5.87638 12.6748 5.82031C12.6953 5.76439 12.7277 5.71331 12.7695 5.6709C12.8113 5.6286 12.8615 5.59545 12.917 5.57422C12.9728 5.55294 13.0332 5.54405 13.0928 5.54785C13.1522 5.5517 13.2102 5.56855 13.2627 5.59668C13.3152 5.62485 13.3614 5.66354 13.3975 5.71094L13.4072 5.72461L13.4189 5.73633L19.6514 11.999L13.4189 18.2637Z"
+                            stroke-width="0.5"
+                        />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__item-link"
+                            >Яндекс продвижение</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item-link"
+                            >Google продвижение</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item-link">Разработка сайтов</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item-link">Интернет-магазины</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item-link"
+                            >Мобильные приложения</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item-link">Брендинг</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item-link">SEO-продвижение</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__item-link">Лендинги</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+        <main class="main-page">
+            <section class="hero">
+    <div class="container">
+        <div class="hero__top">
+            <h1 class="hero__title">
+                Продвижение сайтов в Москве
+                <span class="world"
+                    ><img src="./img/title-icon1.png" alt="планета"
+                /></span>
+                Гарантия роста позиций в Яндекс и Google
+                <span class="pointer"
+                    ><img src="./img/title-icon2.png" alt="прицел"
+                /></span>
+            </h1>
+            <p class="hero__descr">
+                <span>SEO-студия</span>, помогающая вашему бизнесу расти.
+                Оптимизируем сайты, увеличиваем трафик и&nbsp;выводим в&nbsp;топ
+                поисковых систем.
+            </p>
+        </div>
+        <ul class="hero__list">
+            <li class="hero__main-item main-item">
+                <ul class="main-item__list">
+                    <li class="main-item__item">
+                        <a class="main-item__item-link" href="#">SEO</a>
+                    </li>
+                    <div class="divider"></div>
+                    <li class="main-item__item">
+                        <a class="main-item__item-link" href="#"
+                            >Контент-маркетинг</a
+                        >
+                    </li>
+                    <div class="divider"></div>
+                    <li class="main-item__item">
+                        <a class="main-item__item-link" href="#">Аудит сайта</a>
+                    </li>
+                    <li class="main-item__item">
+                        <a class="main-item__item-link" href="#"
+                            >Ссылочное продвижение</a
+                        >
+                    </li>
+                    <div class="divider"></div>
+                    <li class="main-item__item">
+                        <a class="main-item__item-link" href="#"
+                            >Техническая оптимизация</a
+                        >
+                    </li>
+                </ul>
+                <div class="main-item__content-bottom">
+                    <div class="main-item__title">
+                        Креативность, инновации, прогресс
+                    </div>
+                    <img
+                        class="main-item__img"
+                        src="./img/number1.png"
+                        alt="номер 1"
+                    />
+                </div>
+            </li>
+
+            <!-- items -->
+            <li class="hero__item item">
+                <div class="item__inner">
+                    <img
+                        class="item__number"
+                        src="./img/number2.png"
+                        alt="номер 2"
+                    />
+                    <img
+                        class="item__icon"
+                        src="./img/icon2.png"
+                        alt="иконка digital-продукты"
+                    />
+                    <div class="item__content-top">
+                        <div class="item__title">Digital продукты</div>
+                        <p class="item__descr">
+                            Создаем и&nbsp;развиваем digital-продукты:
+                            от&nbsp;веб-сервисов и&nbsp;мобильных приложений
+                            до&nbsp;сложных платформ.
+                        </p>
+                    </div>
+                    <div class="item__content-bottom">
+                        <button class="btn item__btn">
+                            <span>Подробнее</span>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M13.4189 18.2637L13.3584 18.3252C13.2942 18.3641 13.2208 18.3864 13.1445 18.3867C13.0339 18.3871 12.9271 18.3436 12.8486 18.2656C12.7703 18.1877 12.726 18.0812 12.7256 17.9707C12.7254 17.8879 12.7499 17.8073 12.7949 17.7393L12.8467 17.6758L17.6406 12.8428L18.0625 12.416L4.70996 12.416C4.59945 12.416 4.49318 12.3721 4.41504 12.2939C4.33706 12.2159 4.29306 12.1103 4.29297 12C4.29297 11.8895 4.3369 11.7832 4.41504 11.7051C4.49318 11.6269 4.59946 11.583 4.70996 11.583L18.0625 11.583L17.6406 11.1572L12.8467 6.32324L12.834 6.30957L12.8184 6.29883C12.7704 6.2634 12.7301 6.21812 12.7012 6.16602C12.6722 6.11383 12.6551 6.05557 12.6504 5.99609C12.6457 5.93659 12.6543 5.87638 12.6748 5.82031C12.6953 5.76439 12.7277 5.71331 12.7695 5.6709C12.8113 5.6286 12.8615 5.59545 12.917 5.57422C12.9728 5.55294 13.0332 5.54405 13.0928 5.54785C13.1522 5.5517 13.2102 5.56855 13.2627 5.59668C13.3152 5.62485 13.3614 5.66354 13.3975 5.71094L13.4072 5.72461L13.4189 5.73633L19.6514 11.999L13.4189 18.2637Z"
+                                    fill="none"
+                                    stroke="none"
+                                    stroke-width="0.5"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="hero__item item">
+                <div class="item__inner">
+                    <img
+                        class="item__number"
+                        src="./img/number3.png"
+                        alt="номер 3"
+                    />
+                    <img
+                        class="item__icon"
+                        src="./img/icon3.png"
+                        alt="иконка маркетинг"
+                    />
+                    <div class="item__content-top">
+                        <div class="item__title">маркетинг</div>
+                        <p class="item__descr">
+                            Настраиваем и&nbsp;ведем рекламу, продвигаем
+                            в&nbsp;соцсетях, привлекаем лидов и&nbsp;повышаем
+                            лояльность.
+                        </p>
+                    </div>
+                    <div class="item__content-bottom">
+                        <button class="btn item__btn">
+                            <span>Подробнее</span>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M13.4189 18.2637L13.3584 18.3252C13.2942 18.3641 13.2208 18.3864 13.1445 18.3867C13.0339 18.3871 12.9271 18.3436 12.8486 18.2656C12.7703 18.1877 12.726 18.0812 12.7256 17.9707C12.7254 17.8879 12.7499 17.8073 12.7949 17.7393L12.8467 17.6758L17.6406 12.8428L18.0625 12.416L4.70996 12.416C4.59945 12.416 4.49318 12.3721 4.41504 12.2939C4.33706 12.2159 4.29306 12.1103 4.29297 12C4.29297 11.8895 4.3369 11.7832 4.41504 11.7051C4.49318 11.6269 4.59946 11.583 4.70996 11.583L18.0625 11.583L17.6406 11.1572L12.8467 6.32324L12.834 6.30957L12.8184 6.29883C12.7704 6.2634 12.7301 6.21812 12.7012 6.16602C12.6722 6.11383 12.6551 6.05557 12.6504 5.99609C12.6457 5.93659 12.6543 5.87638 12.6748 5.82031C12.6953 5.76439 12.7277 5.71331 12.7695 5.6709C12.8113 5.6286 12.8615 5.59545 12.917 5.57422C12.9728 5.55294 13.0332 5.54405 13.0928 5.54785C13.1522 5.5517 13.2102 5.56855 13.2627 5.59668C13.3152 5.62485 13.3614 5.66354 13.3975 5.71094L13.4072 5.72461L13.4189 5.73633L19.6514 11.999L13.4189 18.2637Z"
+                                    fill="none"
+                                    stroke="none"
+                                    stroke-width="0.5"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="hero__item item">
+                <div class="item__inner">
+                    <img
+                        class="item__number"
+                        src="./img/number4.png"
+                        alt="номер 4"
+                    />
+                    <img
+                        class="item__icon"
+                        src="./img/icon4.png"
+                        alt="иконка топовое seo продвижение"
+                    />
+                    <div class="item__content-top">
+                        <div class="item__title">топовое seo продвижение</div>
+                        <p class="item__descr">
+                            Продвигаем сайты, повышаем их&nbsp;видимость
+                            и&nbsp;привлекаем целевой трафик для роста бизнеса.
+                        </p>
+                    </div>
+                    <div class="item__content-bottom">
+                        <button class="btn item__btn">
+                            <span>Подробнее</span>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M13.4189 18.2637L13.3584 18.3252C13.2942 18.3641 13.2208 18.3864 13.1445 18.3867C13.0339 18.3871 12.9271 18.3436 12.8486 18.2656C12.7703 18.1877 12.726 18.0812 12.7256 17.9707C12.7254 17.8879 12.7499 17.8073 12.7949 17.7393L12.8467 17.6758L17.6406 12.8428L18.0625 12.416L4.70996 12.416C4.59945 12.416 4.49318 12.3721 4.41504 12.2939C4.33706 12.2159 4.29306 12.1103 4.29297 12C4.29297 11.8895 4.3369 11.7832 4.41504 11.7051C4.49318 11.6269 4.59946 11.583 4.70996 11.583L18.0625 11.583L17.6406 11.1572L12.8467 6.32324L12.834 6.30957L12.8184 6.29883C12.7704 6.2634 12.7301 6.21812 12.7012 6.16602C12.6722 6.11383 12.6551 6.05557 12.6504 5.99609C12.6457 5.93659 12.6543 5.87638 12.6748 5.82031C12.6953 5.76439 12.7277 5.71331 12.7695 5.6709C12.8113 5.6286 12.8615 5.59545 12.917 5.57422C12.9728 5.55294 13.0332 5.54405 13.0928 5.54785C13.1522 5.5517 13.2102 5.56855 13.2627 5.59668C13.3152 5.62485 13.3614 5.66354 13.3975 5.71094L13.4072 5.72461L13.4189 5.73633L19.6514 11.999L13.4189 18.2637Z"
+                                    fill="none"
+                                    stroke="none"
+                                    stroke-width="0.5"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="hero__item item">
+                <div class="item__inner">
+                    <img
+                        class="item__number"
+                        src="./img/number5.png"
+                        alt="номер 5"
+                    />
+                    <img
+                        class="item__icon"
+                        src="./img/icon5.png"
+                        alt="иконка Создание сайтов"
+                    />
+                    <div class="item__content-top">
+                        <div class="item__title">Создание сайтов</div>
+                        <p class="item__descr">
+                            Разрабатываем продающие сайты, которые привлекают
+                            клиентов, отражают ценности бренда.
+                        </p>
+                    </div>
+                    <div class="item__content-bottom">
+                        <button class="btn item__btn">
+                            <span>Подробнее</span>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M13.4189 18.2637L13.3584 18.3252C13.2942 18.3641 13.2208 18.3864 13.1445 18.3867C13.0339 18.3871 12.9271 18.3436 12.8486 18.2656C12.7703 18.1877 12.726 18.0812 12.7256 17.9707C12.7254 17.8879 12.7499 17.8073 12.7949 17.7393L12.8467 17.6758L17.6406 12.8428L18.0625 12.416L4.70996 12.416C4.59945 12.416 4.49318 12.3721 4.41504 12.2939C4.33706 12.2159 4.29306 12.1103 4.29297 12C4.29297 11.8895 4.3369 11.7832 4.41504 11.7051C4.49318 11.6269 4.59946 11.583 4.70996 11.583L18.0625 11.583L17.6406 11.1572L12.8467 6.32324L12.834 6.30957L12.8184 6.29883C12.7704 6.2634 12.7301 6.21812 12.7012 6.16602C12.6722 6.11383 12.6551 6.05557 12.6504 5.99609C12.6457 5.93659 12.6543 5.87638 12.6748 5.82031C12.6953 5.76439 12.7277 5.71331 12.7695 5.6709C12.8113 5.6286 12.8615 5.59545 12.917 5.57422C12.9728 5.55294 13.0332 5.54405 13.0928 5.54785C13.1522 5.5517 13.2102 5.56855 13.2627 5.59668C13.3152 5.62485 13.3614 5.66354 13.3975 5.71094L13.4072 5.72461L13.4189 5.73633L19.6514 11.999L13.4189 18.2637Z"
+                                    fill="none"
+                                    stroke="none"
+                                    stroke-width="0.5"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="hero__item item">
+                <div class="item__inner">
+                    <img
+                        class="item__number"
+                        src="./img/number6.png"
+                        alt="номер 6"
+                    />
+                    <img
+                        class="item__icon"
+                        src="./img/icon6.png"
+                        alt="иконка дизайн"
+                    />
+                    <div class="item__content-top">
+                        <div class="item__title">дизайн</div>
+                        <p class="item__descr">
+                            Создаем целостный визуальный образ бренда:
+                            от&nbsp;логотипа и&nbsp;айдентики до&nbsp;дизайна
+                            интерфейсов.
+                        </p>
+                    </div>
+                    <div class="item__content-bottom">
+                        <button class="btn item__btn">
+                            <span>Подробнее</span>
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M13.4189 18.2637L13.3584 18.3252C13.2942 18.3641 13.2208 18.3864 13.1445 18.3867C13.0339 18.3871 12.9271 18.3436 12.8486 18.2656C12.7703 18.1877 12.726 18.0812 12.7256 17.9707C12.7254 17.8879 12.7499 17.8073 12.7949 17.7393L12.8467 17.6758L17.6406 12.8428L18.0625 12.416L4.70996 12.416C4.59945 12.416 4.49318 12.3721 4.41504 12.2939C4.33706 12.2159 4.29306 12.1103 4.29297 12C4.29297 11.8895 4.3369 11.7832 4.41504 11.7051C4.49318 11.6269 4.59946 11.583 4.70996 11.583L18.0625 11.583L17.6406 11.1572L12.8467 6.32324L12.834 6.30957L12.8184 6.29883C12.7704 6.2634 12.7301 6.21812 12.7012 6.16602C12.6722 6.11383 12.6551 6.05557 12.6504 5.99609C12.6457 5.93659 12.6543 5.87638 12.6748 5.82031C12.6953 5.76439 12.7277 5.71331 12.7695 5.6709C12.8113 5.6286 12.8615 5.59545 12.917 5.57422C12.9728 5.55294 13.0332 5.54405 13.0928 5.54785C13.1522 5.5517 13.2102 5.56855 13.2627 5.59668C13.3152 5.62485 13.3614 5.66354 13.3975 5.71094L13.4072 5.72461L13.4189 5.73633L19.6514 11.999L13.4189 18.2637Z"
+                                    fill="none"
+                                    stroke="none"
+                                    stroke-width="0.5"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="hero__benefits-list benefits-list">
+            <li class="benefits-list__item">98% Успешных кейсов</li>
+            <li class="benefits-list__item">24/7 Поддержка Клиентов</li>
+            <li class="benefits-list__item">300+ Сделанных проектов</li>
+        </ul>
+    </div>
+</section>
+ <section class="benefits">
+    <div class="container">
+        <div class="benefits__inner">
+            <div class="benefits__left">
+                <h2 class="benefits__title">
+                    Рост на&nbsp;основе анализа данных
+                </h2>
+                <button class="btn benefits__btn">
+                    <span>Провести аудит</span>
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M13.4189 18.2637L13.3584 18.3252C13.2942 18.3641 13.2208 18.3864 13.1445 18.3867C13.0339 18.3871 12.9271 18.3436 12.8486 18.2656C12.7703 18.1877 12.726 18.0812 12.7256 17.9707C12.7254 17.8879 12.7499 17.8073 12.7949 17.7393L12.8467 17.6758L17.6406 12.8428L18.0625 12.416L4.70996 12.416C4.59945 12.416 4.49318 12.3721 4.41504 12.2939C4.33706 12.2159 4.29306 12.1103 4.29297 12C4.29297 11.8895 4.3369 11.7832 4.41504 11.7051C4.49318 11.6269 4.59946 11.583 4.70996 11.583L18.0625 11.583L17.6406 11.1572L12.8467 6.32324L12.834 6.30957L12.8184 6.29883C12.7704 6.2634 12.7301 6.21812 12.7012 6.16602C12.6722 6.11383 12.6551 6.05557 12.6504 5.99609C12.6457 5.93659 12.6543 5.87638 12.6748 5.82031C12.6953 5.76439 12.7277 5.71331 12.7695 5.6709C12.8113 5.6286 12.8615 5.59545 12.917 5.57422C12.9728 5.55294 13.0332 5.54405 13.0928 5.54785C13.1522 5.5517 13.2102 5.56855 13.2627 5.59668C13.3152 5.62485 13.3614 5.66354 13.3975 5.71094L13.4072 5.72461L13.4189 5.73633L19.6514 11.999L13.4189 18.2637Z"
+                            stroke-width="0.5"
+                        />
+                    </svg>
+                </button>
+            </div>
+            <ul class="benefits__list">
+                <li class="benefits__item item">
+                    <div class="item__title">Качество</div>
+                    <div class="item__value">10&nbsp;000+</div>
+                </li>
+                <li class="benefits__item item">
+                    <div class="item__title">Гарантия</div>
+                    <div class="item__value">100%</div>
+                </li>
+                <li class="benefits__item item">
+                    <div class="item__title">трафик</div>
+                    <div class="item__value">300%</div>
+                </li>
+                <li class="benefits__item item">
+                    <div class="item__title">Успех</div>
+                    <div class="item__value">150%</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="advantages">
+    <div class="container">
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <div class="advantages__content-top">
+            <div class="advantages__heading">
+                SEO-System? <span>Гарантия</span> роста!
+            </div>
+            <div class="advantages__descr">
+                <p>
+                    Мы используем проверенные стратегии и современные
+                    технологии, чтобы ваш сайт занимал топовые позиции в поиске.
+                </p>
+                <p>
+                    С нами вы получаете - индивидуальные решения и долгосрочный
+                    рост трафика.
+                </p>
+            </div>
+        </div>
+        <div class="advantages__content-bottom">
+            <ul class="advantages__list">
+                <li class="advantages__item item">
+                    <img
+                        class="item__number"
+                        src="./img/advantage1.png"
+                        alt="номер1"
+                    />
+                    <div class="item__title">
+                        Отправляем в космос позиции вашего сайта
+                    </div>
+                </li>
+                <li class="advantages__item item">
+                    <img
+                        class="item__number"
+                        src="./img/advantage2.png"
+                        alt="номер2"
+                    />
+                    <div class="item__title">
+                        Сроки продвижения всего от&nbsp;1&nbsp;дня!
+                    </div>
+                </li>
+                <li class="advantages__item item">
+                    <img
+                        class="item__number"
+                        src="./img/advantage3.png"
+                        alt="номер3"
+                    />
+                    <div class="item__title">
+                        Работаем с абсолютно любой тематикой
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="services">
+    <div class="container">
+        <div class="services__top">
+            <h2 class="services__title">Наши услуги</h2>
+            <p class="services__descr">
+                Услуги, которые ускоряют рост вашего бизнеса
+            </p>
+        </div>
+        <ul class="services__list">
+            <li class="services__item item">
+                <div class="item__arrow">
+                    <img src="./img/arrow.png" alt="стрелка" />
+                </div>
+                <div class="item__benefit"><span>Топовые позиции</span></div>
+                <div class="item__title">SEO продвижение</div>
+                <div class="item__content-bottom">
+                    <span class="item__text">01</span>
+                    <span class="item__benefit"><span>Рост бизнеса</span></span>
+                </div>
+            </li>
+            <li class="services__item item">
+                <div class="item__arrow">
+                    <img src="./img/arrow.png" alt="стрелка" />
+                </div>
+                <div class="item__benefit"><span>Всё включено</span></div>
+                <div class="item__title">Разработка сайтов</div>
+                <div class="item__content-bottom">
+                    <span class="item__text">02</span>
+                    <span class="item__benefit"><span>Качество</span></span>
+                </div>
+            </li>
+            <li class="services__item item">
+                <div class="item__arrow">
+                    <img src="./img/arrow.png" alt="стрелка" />
+                </div>
+                <div class="item__benefit"><span>Гарантия качества</span></div>
+                <div class="item__title">Интернет магазины</div>
+                <div class="item__content-bottom">
+                    <span class="item__text">03</span>
+                    <span class="item__benefit"><span>Скорость</span></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+ <section class="offer">
+    <div class="container">
+        <div class="offer__inner">
+            <div class="offer__left">
+                <h2 class="offer__title">
+                    Скидка&nbsp;50% <br />на SEO-продвижение!
+                </h2>
+                <div class="offer__timer timer">
+                    <div class="timer__title">
+                        До&nbsp;окончания акции осталось:
+                    </div>
+                    <div class="timer__blocks">
+                        <div class="timer__block">
+                            <div class="timer__time" id="days">01</div>
+                            <div class="timer__text">дней</div>
+                        </div>
+                        <div class="timer__block">
+                            <div class="timer__time" id="hours">05</div>
+                            <div class="timer__text">часов</div>
+                        </div>
+                        <div class="timer__block">
+                            <div class="timer__time" id="minutes">45</div>
+                            <div class="timer__text">минут</div>
+                        </div>
+                        <div class="timer__block">
+                            <div class="timer__time" id="seconds">12</div>
+                            <div class="timer__text">секунд</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer__left-bottom">
+                    <p class="offer__btn-text">
+                        Скидка только до&nbsp;конца месяца&nbsp;&mdash; успей
+                        поднять свой сайт в&nbsp;топ Google и&nbsp;Яндекс!
+                    </p>
+                    <button class="btn offer__btn">
+                        <span>Получить скидку</span>
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M13.4189 18.2637L13.3584 18.3252C13.2942 18.3641 13.2208 18.3864 13.1445 18.3867C13.0339 18.3871 12.9271 18.3436 12.8486 18.2656C12.7703 18.1877 12.726 18.0812 12.7256 17.9707C12.7254 17.8879 12.7499 17.8073 12.7949 17.7393L12.8467 17.6758L17.6406 12.8428L18.0625 12.416L4.70996 12.416C4.59945 12.416 4.49318 12.3721 4.41504 12.2939C4.33706 12.2159 4.29306 12.1103 4.29297 12C4.29297 11.8895 4.3369 11.7832 4.41504 11.7051C4.49318 11.6269 4.59946 11.583 4.70996 11.583L18.0625 11.583L17.6406 11.1572L12.8467 6.32324L12.834 6.30957L12.8184 6.29883C12.7704 6.2634 12.7301 6.21812 12.7012 6.16602C12.6722 6.11383 12.6551 6.05557 12.6504 5.99609C12.6457 5.93659 12.6543 5.87638 12.6748 5.82031C12.6953 5.76439 12.7277 5.71331 12.7695 5.6709C12.8113 5.6286 12.8615 5.59545 12.917 5.57422C12.9728 5.55294 13.0332 5.54405 13.0928 5.54785C13.1522 5.5517 13.2102 5.56855 13.2627 5.59668C13.3152 5.62485 13.3614 5.66354 13.3975 5.71094L13.4072 5.72461L13.4189 5.73633L19.6514 11.999L13.4189 18.2637Z"
+                                stroke-width="0.5"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="offer__right benefit">
+                <div class="benefit__inner">
+                    <div class="benefit__text">Специальное предложение</div>
+                    <div class="benefit__title">
+                        Гарантированный рост трафика
+                    </div>
+                    <div class="benefit__descr">
+                        Ваш сайт уверенно растет в&nbsp;поисковой выдаче.
+                        Дальше&nbsp;&mdash; больше!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </main>
+
+        
+        <script src="./js/script.bundle.js"></script>
+    </body>
+</html>
