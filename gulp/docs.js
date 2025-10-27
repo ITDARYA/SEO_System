@@ -59,9 +59,9 @@ const plumberNotify = (title) => {
 gulp.task('html:docs', function () {
 	return gulp
 		.src(['./src/html/**/*.html', '!./src/html/blocks/*.html'])
+		.pipe(changed('./docs/'))
 		.pipe(plumber(plumberNotify('HTML')))
 		.pipe(fileInclude(fileIncludeSetting))
-		.pipe(changed('./docs/'))
 		.pipe(
 			replace(
 				/(?<=src=|href=|srcset=)(['"])(\.(\.)?\/)*(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
@@ -91,6 +91,7 @@ gulp.task('html:docs', function () {
 gulp.task('sass:docs', function () {
 	return gulp
 		.src('./src/scss/*.scss')
+		.pipe(changed('./docs/css/'))
 		.pipe(plumber(plumberNotify('SCSS')))
 		.pipe(sourceMaps.init())
 		// .pipe(autoprefixer())

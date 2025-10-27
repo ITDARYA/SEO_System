@@ -53,10 +53,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // табы Hero
     let tabs = document.querySelectorAll(".hero .hero__list .item");
 
-    tabs.forEach((tab) => {
+    tabs.forEach((tab, index) => {
         tab.addEventListener("click", () => {
             tabs.forEach((tab) => tab.classList.add("collapsed"));
             tab.classList.remove("collapsed");
         });
+		if(index === 0) {
+			tab.classList.remove("collapsed");
+		}  
     });
 });
