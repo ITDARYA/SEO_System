@@ -177,6 +177,73 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+
+            position: relative;
+            overflow: hidden;
+            min-width: 252px;
+            transition: padding 0.3s ease-in-out, margin 0.3s ease-in-out,
+                background-image 0.3s ease-in-out, width 0.3s ease-in-out,
+                height 0.3s ease-in-out, min-width 0.3s ease-in-out;
+            cursor: pointer;
+
+            &.collapsed {
+                padding: 10px;
+                min-width: 58px;
+                width: 58px;
+
+                .item__shirma {
+                    pointer-events: all;
+                    opacity: 1;
+                }
+            }
+
+            .item__shirma {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #0c47a0;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.3s ease-in-out;
+                z-index: 2;
+
+                .item__num {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 100%;
+                    color: #393939;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #fff;
+                    border-radius: 50%;
+                }
+                .item__shirma-title {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 500;
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 100%;
+                    transform: rotate(180deg);
+                    writing-mode: vertical-lr;
+                }
+            }
+
             &:nth-child(2) {
                 display: none;
                 background-image: url("../img/hero-bg2.jpg");
