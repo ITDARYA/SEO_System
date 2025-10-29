@@ -7,15 +7,13 @@
         flex-wrap: wrap;
         gap: 20px;
         .benefits__left {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
             max-width: 285px;
             @media (max-width: 1400px) {
                 max-width: 230px;
             }
 
             .benefits__title {
+                margin-bottom: 20px;
                 font-family: $second-family;
                 font-weight: 600;
                 font-size: 36px;
